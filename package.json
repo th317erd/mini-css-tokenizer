@@ -1,0 +1,40 @@
+{
+  "name": "mini-css-tokenizer",
+  "version": "1.0.0",
+  "description": "The smallest CSS parser/tokenizer available",
+  "main": "lib/index.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "coverage": "clear ; node ./node_modules/.bin/nyc ./node_modules/.bin/jasmine",
+    "test": "node ./node_modules/.bin/jasmine",
+    "test-debug": "node --inspect-brk ./node_modules/.bin/jasmine",
+    "test-watch": "watch 'clear ; node ./node_modules/.bin/jasmine' . --wait=2 --interval=1"
+  },
+  "keywords": [ "css", "parser", "tokenizer", "sass", "less", "style", "styles", "stylesheet", "html5", "html", "browser" ],
+  "author": "Wyatt Greenway",
+  "license": "MIT",
+  "dependencies": {
+    "deadbeef": "^1.1.3",
+    "xml-name-validator": "^5.0.0"
+  },
+  "devDependencies": {
+    "@spothero/eslint-plugin-spothero": "github:spothero/eslint-plugin-spothero",
+    "colors": "^1.4.0",
+    "diff": "^5.1.0",
+    "eslint": "^8.54.0",
+    "jasmine": "^5.1.0",
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "spec/**"
+    ]
+  }
+}

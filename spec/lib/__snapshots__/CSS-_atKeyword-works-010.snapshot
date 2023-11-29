@@ -1,0 +1,9 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 2,
+    name: 'atKeyword',
+    start: 0,
+    value: 'Z'
+  }
+}

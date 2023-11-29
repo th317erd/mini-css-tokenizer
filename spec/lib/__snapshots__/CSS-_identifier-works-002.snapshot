@@ -1,0 +1,9 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 9,
+    name: 'identifier',
+    start: 0,
+    value: 'abc0_01d-'
+  }
+}

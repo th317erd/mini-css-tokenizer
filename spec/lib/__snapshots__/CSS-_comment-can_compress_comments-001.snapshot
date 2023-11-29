@@ -1,0 +1,38 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 50,
+    name: 'token',
+    start: 0,
+    value: '/* comment1 */ /* comment2 */ stuff /* comment3 */',
+    children: [
+      Token {
+        end: 14,
+        name: 'comment',
+        raw: '/* comment1 */',
+        start: 0,
+        value: 'comment1'
+      },
+      Token {
+        end: 29,
+        name: 'comment',
+        raw: '/* comment2 */',
+        start: 15,
+        value: 'comment2'
+      },
+      Token {
+        end: 35,
+        name: 'identifier',
+        start: 30,
+        value: 'stuff'
+      },
+      Token {
+        end: 50,
+        name: 'comment',
+        raw: '/* comment3 */',
+        start: 36,
+        value: 'comment3'
+      }
+    ]
+  }
+}

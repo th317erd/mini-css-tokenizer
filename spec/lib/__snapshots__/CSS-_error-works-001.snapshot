@@ -1,0 +1,10 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 0,
+    name: 'error',
+    start: 0,
+    type: 'error',
+    value: 'Test Error'
+  }
+}

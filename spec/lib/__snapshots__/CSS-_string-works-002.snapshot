@@ -1,0 +1,10 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 25,
+    name: 'string',
+    raw: "'test 'substring' here'",
+    start: 0,
+    value: "test 'substring' here"
+  }
+}

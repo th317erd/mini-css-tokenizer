@@ -1,0 +1,10 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 2,
+    name: 'number',
+    number: '42',
+    start: 0,
+    value: 42
+  }
+}

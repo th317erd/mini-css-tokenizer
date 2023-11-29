@@ -1,0 +1,12 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 6,
+    name: 'dimension',
+    number: -0.43,
+    raw: '-.43em',
+    start: 0,
+    unit: 'em',
+    value: -0.43
+  }
+}

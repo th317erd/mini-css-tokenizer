@@ -1,0 +1,11 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 6,
+    name: 'unicodeRange',
+    rangeEnd: '0AFF',
+    rangeStart: '0AFF',
+    start: 0,
+    value: 'U+0AFF'
+  }
+}

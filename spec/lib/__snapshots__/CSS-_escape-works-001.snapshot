@@ -1,0 +1,39 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 12,
+    name: 'token',
+    start: 0,
+    value: '\\\\\\.\\ \\1f303',
+    children: [
+      Token {
+        end: 2,
+        name: 'escape',
+        start: 0,
+        type: 'character',
+        value: '\\'
+      },
+      Token {
+        end: 4,
+        name: 'escape',
+        start: 2,
+        type: 'character',
+        value: '.'
+      },
+      Token {
+        end: 6,
+        name: 'escape',
+        start: 4,
+        type: 'whitespace',
+        value: ' '
+      },
+      Token {
+        end: 12,
+        name: 'escape',
+        start: 6,
+        type: 'hexDigit',
+        value: '🌃'
+      }
+    ]
+  }
+}

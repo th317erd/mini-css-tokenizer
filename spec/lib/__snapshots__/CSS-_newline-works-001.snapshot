@@ -1,0 +1,35 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 5,
+    name: 'token',
+    start: 0,
+    value: '\n\r\n\r\f',
+    children: [
+      Token {
+        end: 1,
+        name: 'newline',
+        start: 0,
+        value: '\n'
+      },
+      Token {
+        end: 3,
+        name: 'newline',
+        start: 1,
+        value: '\r\n'
+      },
+      Token {
+        end: 4,
+        name: 'newline',
+        start: 3,
+        value: '\r'
+      },
+      Token {
+        end: 5,
+        name: 'newline',
+        start: 4,
+        value: '\f'
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 21,
+    name: 'string',
+    raw: '"Starry Night 🌃"',
+    start: 0,
+    value: 'Starry Night 🌃'
+  }
+}

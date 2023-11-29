@@ -1,0 +1,10 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 15,
+    id: true,
+    name: 'hash',
+    start: 0,
+    value: '---a bc0_01d-'
+  }
+}

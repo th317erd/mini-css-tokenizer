@@ -1,0 +1,9 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 15,
+    name: 'function',
+    start: 0,
+    value: '---a bc0_01d-'
+  }
+}

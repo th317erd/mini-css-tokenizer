@@ -1,0 +1,12 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 3,
+    name: 'dimension',
+    number: 0,
+    raw: '0pt',
+    start: 0,
+    unit: 'pt',
+    value: 0
+  }
+}

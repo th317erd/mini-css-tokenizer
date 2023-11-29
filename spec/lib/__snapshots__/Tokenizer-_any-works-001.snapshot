@@ -1,0 +1,9 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 7,
+    name: 'Word',
+    start: 0,
+    value: 'testIng'
+  }
+}

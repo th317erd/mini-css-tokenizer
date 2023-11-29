@@ -1,0 +1,9 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 13,
+    name: 'atKeyword',
+    start: 0,
+    value: '--_abc0_01d-'
+  }
+}

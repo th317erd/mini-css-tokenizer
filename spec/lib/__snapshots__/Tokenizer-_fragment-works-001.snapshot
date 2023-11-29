@@ -1,0 +1,32 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 19,
+    name: 'Loop',
+    start: 0,
+    value: '  one  two  three  ',
+    children: [
+      Token {
+        end: 5,
+        name: 'Word',
+        optional: true,
+        start: 2,
+        value: 'one'
+      },
+      Token {
+        end: 10,
+        name: 'Word',
+        optional: true,
+        start: 7,
+        value: 'two'
+      },
+      Token {
+        end: 17,
+        name: 'Word',
+        optional: true,
+        start: 12,
+        value: 'three'
+      }
+    ]
+  }
+}

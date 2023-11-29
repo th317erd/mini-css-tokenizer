@@ -1,0 +1,12 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 9,
+    exponent: 'E-1',
+    name: 'number',
+    number: '.1234',
+    sign: '+',
+    start: 0,
+    value: 0.01234
+  }
+}

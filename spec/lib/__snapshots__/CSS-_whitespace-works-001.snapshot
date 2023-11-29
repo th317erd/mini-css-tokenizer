@@ -1,0 +1,17 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 7,
+    name: 'token',
+    start: 0,
+    value: '\t\n\r\n\r\f ',
+    children: [
+      Token {
+        end: 7,
+        name: 'whitespace',
+        start: 0,
+        value: '\t\n\r\n\r\f '
+      }
+    ]
+  }
+}

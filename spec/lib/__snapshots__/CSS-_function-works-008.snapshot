@@ -1,0 +1,9 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 3,
+    name: 'function',
+    start: 0,
+    value: '-a'
+  }
+}

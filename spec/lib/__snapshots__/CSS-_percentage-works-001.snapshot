@@ -1,0 +1,11 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 6,
+    name: 'percentage',
+    ratio: 0.1243,
+    raw: '12.43%',
+    start: 0,
+    value: 12.43
+  }
+}

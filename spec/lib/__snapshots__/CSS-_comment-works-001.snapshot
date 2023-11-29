@@ -1,0 +1,10 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 13,
+    name: 'comment',
+    raw: '/* comment */',
+    start: 0,
+    value: 'comment'
+  }
+}

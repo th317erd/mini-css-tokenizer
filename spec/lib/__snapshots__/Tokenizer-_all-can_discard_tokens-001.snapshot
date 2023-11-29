@@ -1,0 +1,17 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 9,
+    name: 'Program',
+    start: 0,
+    value: '  testIng',
+    children: [
+      Token {
+        end: 9,
+        name: 'Word',
+        start: 2,
+        value: 'testIng'
+      }
+    ]
+  }
+}

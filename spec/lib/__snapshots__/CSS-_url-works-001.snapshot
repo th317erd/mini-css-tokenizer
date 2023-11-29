@@ -1,0 +1,9 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 21,
+    name: 'url',
+    start: 0,
+    value: 'https://test.com'
+  }
+}

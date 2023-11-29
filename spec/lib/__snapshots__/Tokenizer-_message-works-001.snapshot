@@ -1,0 +1,26 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 2,
+    name: 'Loop',
+    start: 0,
+    value: '  ',
+    children: [
+      Token {
+        end: 2,
+        name: 'Program',
+        start: 0,
+        value: '  ',
+        children: [
+          Token {
+            end: 2,
+            name: 'message',
+            start: 2,
+            type: 'error',
+            value: 'Unable to parse!'
+          }
+        ]
+      }
+    ]
+  }
+}

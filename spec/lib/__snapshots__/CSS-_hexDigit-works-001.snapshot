@@ -1,0 +1,47 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 23,
+    name: 'token',
+    start: 0,
+    value: '0|f0|dd|cdf|abc1|a0cdef',
+    children: [
+      Token {
+        end: 1,
+        name: 'hexDigit',
+        start: 0,
+        value: '0'
+      },
+      Token {
+        end: 4,
+        name: 'hexDigit',
+        start: 2,
+        value: 'f0'
+      },
+      Token {
+        end: 7,
+        name: 'hexDigit',
+        start: 5,
+        value: 'dd'
+      },
+      Token {
+        end: 11,
+        name: 'hexDigit',
+        start: 8,
+        value: 'cdf'
+      },
+      Token {
+        end: 16,
+        name: 'hexDigit',
+        start: 12,
+        value: 'abc1'
+      },
+      Token {
+        end: 23,
+        name: 'hexDigit',
+        start: 17,
+        value: 'a0cdef'
+      }
+    ]
+  }
+}

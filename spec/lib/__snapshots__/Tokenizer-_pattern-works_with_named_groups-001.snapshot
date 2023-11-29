@@ -1,0 +1,10 @@
+{
+  '$type': 'Token',
+  value: Token {
+    capture: 'test',
+    end: 4,
+    name: 'token',
+    start: 0,
+    value: 'test'
+  }
+}
