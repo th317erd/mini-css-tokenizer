@@ -1,0 +1,10 @@
+{
+  '$type': 'Token',
+  value: Token {
+    end: 1,
+    name: 'combinator',
+    start: 0,
+    type: 'descendant',
+    value: ' '
+  }
+}

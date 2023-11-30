@@ -60,4 +60,31 @@ describe('Utils', () => {
       });
     });
   });
+
+  describe('isPlainObject', () => {
+    it('works', () => {
+      class Test {}
+
+      expect(Utils.isPlainObject(undefined)).toBe(false);
+      expect(Utils.isPlainObject(null)).toBe(false);
+      expect(Utils.isPlainObject(NaN)).toBe(false);
+      expect(Utils.isPlainObject(Infinity)).toBe(false);
+      expect(Utils.isPlainObject('test')).toBe(false);
+      expect(Utils.isPlainObject(new String('test'))).toBe(false);
+      expect(Utils.isPlainObject(2.0)).toBe(false);
+      expect(Utils.isPlainObject(new Number(2.0))).toBe(false);
+      expect(Utils.isPlainObject(true)).toBe(false);
+      expect(Utils.isPlainObject(false)).toBe(false);
+      expect(Utils.isPlainObject(new Boolean(true))).toBe(false);
+      expect(Utils.isPlainObject(BigInt(1))).toBe(false);
+      expect(Utils.isPlainObject(new Map())).toBe(false);
+      expect(Utils.isPlainObject(new Set())).toBe(false);
+      expect(Utils.isPlainObject(new Array())).toBe(false);
+      expect(Utils.isPlainObject(new Map())).toBe(false);
+      expect(Utils.isPlainObject(new Test())).toBe(false);
+      expect(Utils.isPlainObject(new Object())).toBe(true);
+      expect(Utils.isPlainObject({})).toBe(true);
+      expect(Utils.isPlainObject(Object.create(null))).toBe(true);
+    });
+  });
 });

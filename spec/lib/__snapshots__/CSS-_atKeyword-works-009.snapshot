@@ -3,6 +3,7 @@
   value: Token {
     end: 3,
     name: 'atKeyword',
+    nested: false,
     start: 0,
     value: '_Z'
   }

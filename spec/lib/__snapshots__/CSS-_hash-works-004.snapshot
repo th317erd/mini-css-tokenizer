@@ -4,6 +4,7 @@
     end: 13,
     id: true,
     name: 'hash',
+    raw: '#--_abc0_01d-',
     start: 0,
     value: '--_abc0_01d-'
   }

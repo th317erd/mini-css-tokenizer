@@ -2,16 +2,20 @@
   "name": "mini-css-tokenizer",
   "version": "1.0.0",
   "description": "The smallest CSS parser/tokenizer available",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "type": "module",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
+    "build-watch": "watch 'clear ; ./node_modules/.bin/webpack' . --wait=2 --interval=1",
+    "build": "./node_modules/.bin/webpack",
     "coverage": "clear ; node ./node_modules/.bin/nyc ./node_modules/.bin/jasmine",
-    "test": "node ./node_modules/.bin/jasmine",
+    "prepublishOnly": "NODE_ENV=production ./node_modules/.bin/webpack",
     "test-debug": "node --inspect-brk ./node_modules/.bin/jasmine",
-    "test-watch": "watch 'clear ; node ./node_modules/.bin/jasmine' . --wait=2 --interval=1"
+    "test-update-snapshots": "node ./node_modules/.bin/jasmine -- --update-snapshots",
+    "test-watch": "watch 'clear ; node ./node_modules/.bin/jasmine' . --wait=2 --interval=1",
+    "test": "node ./node_modules/.bin/jasmine"
   },
   "keywords": [ "css", "parser", "tokenizer", "sass", "less", "style", "styles", "stylesheet", "html5", "html", "browser" ],
   "author": "Wyatt Greenway",
@@ -22,11 +26,15 @@
   },
   "devDependencies": {
     "@spothero/eslint-plugin-spothero": "github:spothero/eslint-plugin-spothero",
+    "@webpack-cli/generators": "^3.0.7",
     "colors": "^1.4.0",
     "diff": "^5.1.0",
     "eslint": "^8.54.0",
     "jasmine": "^5.1.0",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   },
   "nyc": {
     "reporter": [

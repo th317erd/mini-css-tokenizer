@@ -21,7 +21,7 @@ const {
 describe('Tokenizer', () => {
   describe('$pattern', () => {
     it('works', () => {
-      let context = Tokenizer.createPatternContext('testIng');
+      let context = Tokenizer.Context.fromSource('testIng');
 
       let result = $pattern(/test/g)(context);
       expect(result).toMatchSnapshot();
@@ -31,7 +31,7 @@ describe('Tokenizer', () => {
     });
 
     it('works with named groups', () => {
-      let context = Tokenizer.createPatternContext('testIng');
+      let context = Tokenizer.Context.fromSource('testIng');
 
       let result = $pattern(/(?<capture>test)/g)(context);
       expect(result).toMatchSnapshot();
@@ -40,7 +40,7 @@ describe('Tokenizer', () => {
 
   describe('$any', () => {
     it('works', () => {
-      let context = Tokenizer.createPatternContext('testIng');
+      let context = Tokenizer.Context.fromSource('testIng');
 
       let $program = $any(
         $pattern.name('Whitespace')(/\s+/g),
@@ -53,7 +53,7 @@ describe('Tokenizer', () => {
 
   describe('$all', () => {
     it('works', () => {
-      let context = Tokenizer.createPatternContext('  testIng');
+      let context = Tokenizer.Context.fromSource('  testIng');
 
       let $program = $all.name('Program')(
         $pattern.name('Whitespace')(/\s+/g),
@@ -64,7 +64,7 @@ describe('Tokenizer', () => {
     });
 
     it('can discard tokens', () => {
-      let context = Tokenizer.createPatternContext('  testIng');
+      let context = Tokenizer.Context.fromSource('  testIng');
 
       let $program = $all.name('Program')(
         $pattern.name('Whitespace').discard(true)(/\s+/g),
@@ -77,7 +77,7 @@ describe('Tokenizer', () => {
 
   describe('$repeat', () => {
     it('works', () => {
-      let context = Tokenizer.createPatternContext('  one  two  three  ');
+      let context = Tokenizer.Context.fromSource('  one  two  three  ');
 
       let $program = $all.name('Program')(
         $pattern.name('Whitespace').discard(true)(/\s+/g),
@@ -91,7 +91,7 @@ describe('Tokenizer', () => {
 
   describe('$fragment', () => {
     it('works', () => {
-      let context = Tokenizer.createPatternContext('  one  two  three  ');
+      let context = Tokenizer.Context.fromSource('  one  two  three  ');
 
       let $program = $all.name('Program')(
         $pattern.name('Whitespace').discard(true)(/\s+/g),
@@ -103,21 +103,21 @@ describe('Tokenizer', () => {
     });
 
     it('works2', () => {
-      let context = Tokenizer.createPatternContext('  one  two  three  ');
+      let context = Tokenizer.Context.fromSource('  one  two  three  ');
 
       let $program = $all.name('Program')(
         $pattern.name('Whitespace').discard(true)(/\s+/g),
         $pattern.name('Word')(/\w+/g),
       );
 
-      let $loop = $repeat.name('Loop')($($program));
+      let $loop = $repeat.name('Loop')($fragment($program));
       expect($loop(context)).toMatchSnapshot();
     });
   });
 
   describe('$message', () => {
     it('works', () => {
-      let context = Tokenizer.createPatternContext('  10  two  three  ');
+      let context = Tokenizer.Context.fromSource('  10  two  three  ');
 
       let $program = $all.name('Program')(
         $pattern.name('Whitespace').discard(true)(/\s+/g),
